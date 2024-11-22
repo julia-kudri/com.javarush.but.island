@@ -1,3 +1,5 @@
+package Animals;
+
 public abstract class Animal {
     double weight;
     double maxSatiety;     //(Макс насыщение)

@@ -1,4 +1,4 @@
-package Animals.Predators;
+package Objects.Animals.Predators;
 
 public class Boa extends Predator {
 }

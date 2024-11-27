@@ -1,8 +1,8 @@
-package ObjectsOfIsland.Animal.Herbivore;
+package src.ObjectsOfIsland.Animal.Herbivore;
 
-import ObjectsOfIsland.Animal.Animal;
-import ObjectsOfIsland.Cell;
-import ObjectsOfIsland.Entity;
+import src.ObjectsOfIsland.Animal.Animal;
+import src.ObjectsOfIsland.Cell;
+import src.ObjectsOfIsland.Entity;
 
 public class Deer extends Herbivore {
     public Deer() {super(Entity.DEER);}

@@ -1,6 +1,7 @@
+package src.ObjectsOfIsland;
 
 import java.util.Random;
-import src.ObjectsOfIsland;
+
 
 public abstract class LivingObject {
     private Cell cell;
@@ -12,9 +13,9 @@ public abstract class LivingObject {
 
     public LivingObject (Entity entity) {
         this.entity = entity;
-        x = (new Random().nextInt(Island.xLenght)) + 1;
-        y = (new Random().nextInt(Island.yLenght)) + 1;
-        indexOfCell = ((Island.xLenght) * (y-1) + x) - 1;
+        x = (new Random().nextInt(Island.x)) + 1;
+        y = (new Random().nextInt(Island.y)) + 1;
+        indexOfCell = ((Island.x) * (y-1) + x) - 1;
         this.cell =  Island.cellList.get(indexOfCell);
         this.weight = entity.getWeight();
         this.name = entity.getName() + hashCode();
@@ -26,7 +27,7 @@ public abstract class LivingObject {
         this.entity = entity;
         x = cell.getX();
         y = cell.getY();
-        indexOfCell = ((Island.xLenght) * (y-1) + x) - 1;
+        indexOfCell = ((Island.x) * (y-1) + x) - 1;
     }
 
     public abstract void die();

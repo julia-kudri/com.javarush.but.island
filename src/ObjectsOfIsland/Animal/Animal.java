@@ -1,9 +1,9 @@
-package ObjectsOfIsland.Animal;
+package src.ObjectsOfIsland.Animal;
 
-import ObjectsOfIsland.Cell;
-import ObjectsOfIsland.Entity;
-import ObjectsOfIsland.Island;
-import ObjectsOfIsland.LivingObject;
+import src.ObjectsOfIsland.Cell;
+import src.ObjectsOfIsland.Entity;
+import src.ObjectsOfIsland.Island;
+import src.ObjectsOfIsland.LivingObject;
 
 import java.util.Random;
 
@@ -78,7 +78,7 @@ public abstract class Animal extends LivingObject {
         int direction = new Random().nextInt(4);  // Задаем направление
         int x = getCell().getX();
         int y = getCell().getY();
-        int indexOfCell = ((Island.xLenght) * (y-1) + x) - 1; // Рассчитываем индекс текущей ячейки в списке
+        int indexOfCell = ((Island.x) * (y-1) + x) - 1; // Рассчитываем индекс текущей ячейки в списке
         switch (direction){
             case 0  -> // вправо
                     x = getCell().getX() + speed ;
@@ -91,13 +91,13 @@ public abstract class Animal extends LivingObject {
         }
         if (x<=1)
             x = 1;
-        if (x > Island.xLenght)
-            x = Island.xLenght;
+        if (x > Island.x)
+            x = Island.x;
         if (y<=1)
             y = 1;
-        if (y > Island.yLenght)
-            y = Island.yLenght;
-        int newIndex = ((Island.xLenght) * (y-1) + x) - 1;
+        if (y > Island.y)
+            y = Island.y;
+        int newIndex = ((Island.x) * (y-1) + x) - 1;
         if (Island.cellList.get(newIndex).countOfEntities(getEntity())
                 < maxCountInCell ){
             Island.cellList.get(indexOfCell).getAnimalsInCell().remove(Animal.this);

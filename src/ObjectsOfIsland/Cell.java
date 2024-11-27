@@ -1,7 +1,7 @@
-package ObjectsOfIsland;
+package src.ObjectsOfIsland;
 
-import ObjectsOfIsland.Animal.Animal;
-import ObjectsOfIsland.Plant.Plant;
+import src.ObjectsOfIsland.Animal.Animal;
+import src.ObjectsOfIsland.Plant.Plant;
 
 import java.util.ArrayList;
 import java.util.List;

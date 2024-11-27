@@ -1,4 +1,4 @@
-package ObjectsOfIsland;
+package src.ObjectsOfIsland;
 
 
 public enum Entity {

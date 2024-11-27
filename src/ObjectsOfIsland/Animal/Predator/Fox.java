@@ -1,9 +1,9 @@
-package ObjectsOfIsland.Animal.Predator;
+package src.ObjectsOfIsland.Animal.Predator;
 
 
-import ObjectsOfIsland.Animal.Animal;
-import ObjectsOfIsland.Cell;
-import ObjectsOfIsland.Entity;
+import src.ObjectsOfIsland.Animal.Animal;
+import src.ObjectsOfIsland.Cell;
+import src.ObjectsOfIsland.Entity;
 
 public class Fox extends Predator {
 

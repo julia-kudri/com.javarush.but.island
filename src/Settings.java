@@ -1,11 +1,13 @@
-import ObjectsOfIsland.Animal.Herbivore.*;
-import ObjectsOfIsland.Animal.Predator.*;
-import ObjectsOfIsland.Island;
-import ObjectsOfIsland.Plant.Plant;
+package src;
+
+import src.ObjectsOfIsland.Animal.Herbivore.*;
+import src.ObjectsOfIsland.Animal.Predator.*;
+import src.ObjectsOfIsland.Island;
+import src.ObjectsOfIsland.Plant.Plant;
 
 
 public class Settings {
-    //ОСТРОВ (X на Y)
+    //ОСТРОВ (длинна(X), ширина(Y))
     public static final int X = 10;
     public static final int Y = 10;
     public static final int COUNT_OF_STEPS = 1;

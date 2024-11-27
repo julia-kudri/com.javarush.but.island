@@ -1,8 +1,8 @@
-package Entity.Animals.Herbivores;
+package ObjectsOfIsland.Animal.Herbivore;
 
-import Entity.Animals.Animal;
-import Entity.Animals.Entity;
-import Entity.Cell;
+import ObjectsOfIsland.Animal.Animal;
+import ObjectsOfIsland.Cell;
+import ObjectsOfIsland.Entity;
 
 public class Rabbit extends Herbivore {
 

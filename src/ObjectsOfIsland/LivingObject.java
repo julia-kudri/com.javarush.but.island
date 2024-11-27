@@ -1,8 +1,6 @@
-package Entity;
-
-import Entity.Animals.Entity;
 
 import java.util.Random;
+import src.ObjectsOfIsland;
 
 public abstract class LivingObject {
     private Cell cell;
@@ -33,49 +31,28 @@ public abstract class LivingObject {
 
     public abstract void die();
 
-    public Cell getCell() {
-        return cell;
-    }
+    public Cell getCell() {return cell;}
 
-    public void setCell(Cell cell) {
-        this.cell = cell;
-    }
+    public void setCell(Cell cell) {this.cell = cell;}
 
-    public double getWeight() {
-        return weight;
-    }
+    public double getWeight() {return weight;}
 
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
+    public void setWeight(double weight) {this.weight = weight;}
 
-    public String getName() {
-        return name;
-    }
+    public String getName() {return name;}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setName(String name) {this.name = name;}
 
-    public Entity getEntity() {
-        return entity;
-    }
+    public Entity getEntity() {return entity;}
 
-    public void setEntity(Entity species) {
-        this.entity = species;
-    }
+    public void setEntity(Entity species) {this.entity = species;}
 
     @Override
     public String toString() {
-        return   name +
-                ", cell=" + cell +
-                ", weight=" + weight +
-                ", entity=" + entity +
+        return  '{' + name +
+                ", клетка = " + cell +
+                ", вес = " + weight +
+                ", существо = " + entity +
                 '}';
     }
-
-
-
-
-
 }

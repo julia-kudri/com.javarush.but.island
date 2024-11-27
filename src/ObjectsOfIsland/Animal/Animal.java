@@ -1,8 +1,9 @@
-package Entity.Animals;
+package ObjectsOfIsland.Animal;
 
-import Entity.LivingObject;
-import Entity.Island;
-import Entity.Cell;
+import ObjectsOfIsland.Cell;
+import ObjectsOfIsland.Entity;
+import ObjectsOfIsland.Island;
+import ObjectsOfIsland.LivingObject;
 
 import java.util.Random;
 
@@ -132,28 +133,12 @@ public abstract class Animal extends LivingObject {
 
     public void setSatiety(double satiety) {this.satiety = satiety;}
 
-    // public boolean isKilled() {
-    //   return isKilled;
-    // }
-
-    //  public void setKilled(boolean killed) {
-    //    isKilled = killed;
-    // }
-
     @Override
     public String toString() {
         return getName() + "  "  + getCell()+
-                " пол =" + sex + ", вес=" + getWeight() +
-                ", сытость=" + satiety +
+                " пол = " + sex + ", вес = " + getWeight() +
+                ", сытость = " + satiety +
                 '}';
     }
 
-
-//    public void eat(Plant plant){}
-//    public void eat(Animal animal){}
-//    public void worker(){}
-//    public void move(){}
-//    public void chooseDirection(){}//(Выбрать направление)
-//    public void reproduce(){}
-//    public void die(){}
 }

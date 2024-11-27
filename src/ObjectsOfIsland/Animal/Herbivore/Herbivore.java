@@ -1,9 +1,9 @@
-package Entity.Animals.Herbivores;
+package ObjectsOfIsland.Animal.Herbivore;
 
-import Entity.Animals.Animal;
-import Entity.Animals.Entity;
-import Entity.Cell;
-import Entity.Plants.Plant;
+import ObjectsOfIsland.Animal.Animal;
+import ObjectsOfIsland.Cell;
+import ObjectsOfIsland.Entity;
+import ObjectsOfIsland.Plant.Plant;
 
 public abstract class Herbivore extends Animal {
 

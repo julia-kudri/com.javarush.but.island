@@ -1,8 +1,7 @@
-package Entity;
+package ObjectsOfIsland;
 
-import Entity.Animals.Animal;
-import Entity.Animals.Entity;
-import Entity.Plants.Plant;
+import ObjectsOfIsland.Animal.Animal;
+import ObjectsOfIsland.Plant.Plant;
 
 import java.util.ArrayList;
 import java.util.List;

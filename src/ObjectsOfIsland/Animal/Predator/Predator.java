@@ -1,9 +1,9 @@
-package Entity.Animals.Predators;
+package ObjectsOfIsland.Animal.Predator;
 
-import Entity.Animals.Animal;
-import Entity.Animals.Entity;
-import Entity.Island;
-import Entity.Cell;
+import ObjectsOfIsland.Animal.Animal;
+import ObjectsOfIsland.Entity;
+import ObjectsOfIsland.Island;
+import ObjectsOfIsland.Cell;
 
 import java.util.Random;
 

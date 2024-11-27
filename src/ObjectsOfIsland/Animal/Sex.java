@@ -1,4 +1,4 @@
-package Entity.Animals;
+package ObjectsOfIsland.Animal;
 
 public enum Sex {
     MALE,

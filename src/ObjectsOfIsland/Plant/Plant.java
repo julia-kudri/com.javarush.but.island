@@ -1,8 +1,8 @@
-package Entity.Plants;
+package ObjectsOfIsland.Plant;
 
-import Entity.Animals.Entity;
-import Entity.LivingObject;
-import Entity.Island;
+import ObjectsOfIsland.Entity;
+import ObjectsOfIsland.LivingObject;
+import ObjectsOfIsland.Island;
 
 public class Plant extends LivingObject {
     public Plant () {

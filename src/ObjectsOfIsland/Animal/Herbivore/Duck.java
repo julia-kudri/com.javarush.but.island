@@ -1,10 +1,10 @@
-package Entity.Animals.Herbivores;
+package ObjectsOfIsland.Animal.Herbivore;
 
-import Entity.Animals.Animal;
-import Entity.Animals.Entity;
-import Entity.Cell;
-import Entity.Plants.Plant;
-import Entity.Island;
+import ObjectsOfIsland.Animal.Animal;
+import ObjectsOfIsland.Cell;
+import ObjectsOfIsland.Entity;
+import ObjectsOfIsland.Plant.Plant;
+import ObjectsOfIsland.Island;
 
 import java.util.Random;
 

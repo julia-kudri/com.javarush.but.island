@@ -1,15 +1,15 @@
-package Entity;
+package ObjectsOfIsland;
 
-import Entity.Animals.Animal;
-import Entity.Plants.Plant;
+import ObjectsOfIsland.Animal.Animal;
+import ObjectsOfIsland.Plant.Plant;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Island {
 
-    public static int xLenght;
-    public static int yLenght;
+    public static int xLenght; //длинна острова
+    public static int yLenght; //ширина острова
     public static List<Cell> cellList = new ArrayList<>();
     public static List <Animal> animals = new ArrayList<>();
     public static List <Plant> plants = new ArrayList<>();
@@ -27,10 +27,10 @@ public class Island {
 
     @Override
     public String toString() {
-        return "Island{" +
-                "xLenght=" + xLenght +
-                ", yLenght=" + yLenght +
-                ", cellList=" + cellList +
+        return "Остров{" +
+                "длинна(x) = " + xLenght +
+                ", ширина(y) = " + yLenght +
+                ", список клеток = " + cellList +
                 '}';
     }
 }

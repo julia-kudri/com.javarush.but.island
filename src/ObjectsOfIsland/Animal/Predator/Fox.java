@@ -1,9 +1,9 @@
-package Entity.Animals.Predators;
+package ObjectsOfIsland.Animal.Predator;
 
 
-import Entity.Animals.Animal;
-import Entity.Animals.Entity;
-import Entity.Cell;
+import ObjectsOfIsland.Animal.Animal;
+import ObjectsOfIsland.Cell;
+import ObjectsOfIsland.Entity;
 
 public class Fox extends Predator {
 

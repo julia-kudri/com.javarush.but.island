@@ -10,15 +10,19 @@ import java.util.Random;
 
 public class Duck extends Herbivore {
 
-    public Duck() {super(Entity.DUCK);}
+    public Duck() {
+        super(Entity.DUCK);
+    }
 
-    public Duck(Cell cell) {super(cell, Entity.DUCK);}
+    public Duck(Cell cell) {
+        super(cell, Entity.DUCK);
+    }
 
     @Override
     public synchronized void eat() {
         if (getSatiety() < getWeightForLife()) {
             for (int i = 0; i < getCell().getPlantsInCell().size(); i++) {
-                if (getSatiety() < getWeightForLife()){
+                if (getSatiety() < getWeightForLife()) {
                     Plant plant = getCell().getPlantsInCell().get(i);
                     double oldSatiety = getSatiety();
                     double newSatiety = oldSatiety + plant.getWeight();
@@ -29,7 +33,8 @@ public class Duck extends Herbivore {
                         plant.setWeight(newSatiety - oldSatiety);
                     System.out.println(getName() + " поел " + "\\uD83E\\uDD57 " + plant.getName());
                     plant.die();
-                }}
+                }
+            }
 
             for (int i = 0; i < getCell().getAnimalsInCell().size(); i++) {
                 int j = new Random().nextInt(100) + 1;
@@ -45,17 +50,20 @@ public class Duck extends Herbivore {
                     System.out.println(getName() + " съел " + "\\uD83E\\uDD53 " + food.getName());
                 }
             }
-        }     }
+        }
+    }
 
     public int chanceOfEat(Entity entity) {
         int chance;
-        switch (entity){
-            case CATERPILLAR  -> chance = 90;
+        switch (entity) {
+            case CATERPILLAR -> chance = 90;
             default -> chance = 0;
         }
         return chance;
     }
 
     @Override
-    public Animal born() {return new Duck(getCell());}
+    public Animal born() {
+        return new Duck(getCell());
+    }
 }

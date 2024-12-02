@@ -31,7 +31,7 @@ public class Duck extends Herbivore {
                     setSatiety(newSatiety);
                     if (newSatiety != oldSatiety)
                         plant.setWeight(newSatiety - oldSatiety);
-                    System.out.println(getName() + " поел " + "\\uD83E\\uDD57 " + plant.getName());
+                    System.out.println(getName() + " пощипал " + plant.getName());
                     plant.die();
                 }
             }
@@ -47,7 +47,7 @@ public class Duck extends Herbivore {
                     setSatiety(newSatiety);
                     Island.animals.remove(food);
                     getCell().getAnimalsInCell().remove(food);
-                    System.out.println(getName() + " съел " + "\\uD83E\\uDD53 " + food.getName());
+                    System.out.println(getName() + " съел " + food.getName());
                 }
             }
         }

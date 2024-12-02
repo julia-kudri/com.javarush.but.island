@@ -33,45 +33,27 @@ public class Cell {
         return  count;
     }
 
+    public int getX() {return x;}
 
-    public int getX() {
-        return x;
-    }
+    public void setX(int x) {this.x = x;}
 
-    public void setX(int x) {
-        this.x = x;
-    }
+    public int getY() {return y;}
 
-    public int getY() {
-        return y;
-    }
+    public void setY(int y) {this.y = y;}
 
-    public void setY(int y) {
-        this.y = y;
-    }
+    public List<Animal> getAnimalsInCell() {return animalsInCell;}
 
-    public List<Animal> getAnimalsInCell() {
-        return animalsInCell;
-    }
+    public void setAnimalsInCell(List<Animal> animalsInCell) {this.animalsInCell = animalsInCell;}
 
-    public void setAnimalsInCell(List<Animal> animalsInCell) {
-        this.animalsInCell = animalsInCell;
-    }
+    public List<Plant> getPlantsInCell() {return plantsInCell;}
 
-    public List<Plant> getPlantsInCell() {
-        return plantsInCell;
-    }
-
-    public void setPlantsInCell(List<Plant> plantsInCell) {
-        this.plantsInCell = plantsInCell;
-    }
-
+    public void setPlantsInCell(List<Plant> plantsInCell) {this.plantsInCell = plantsInCell;}
 
     @Override
     public String toString() {
-        return " {" +
-                "x=" + x +
-                ", y=" + y +
-                '}';
+        return "{" +
+                "x = " + x +
+                ", y = " + y +
+                "}";
     }
 }

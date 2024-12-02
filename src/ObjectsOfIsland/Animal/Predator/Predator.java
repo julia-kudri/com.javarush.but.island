@@ -32,7 +32,7 @@ public abstract class Predator extends Animal {
                         setSatiety(newSatiety);
                         Island.animals.remove(food);
                         getCell().getAnimalsInCell().remove(food);
-                        System.out.println(getName() + " съел " + "\\uD83E\\uDD53 " + food.getName() );
+                        System.out.println(getName() + " съел " + food.getName() );
                     }
                 }}
         }

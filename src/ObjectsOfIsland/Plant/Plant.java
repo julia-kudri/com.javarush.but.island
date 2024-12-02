@@ -16,7 +16,7 @@ public class Plant extends LivingObject {
         if (getWeight() <= 0) {
             Island.plants.remove(Plant.this);
             getCell().getPlantsInCell().remove(Plant.this);
-            System.out.println(getName() + " погиб " + "\\u274C");
+            System.out.println(getName() + " погиб.");
         }
     }
 }

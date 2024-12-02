@@ -24,7 +24,7 @@ public abstract class Herbivore extends Animal {
                     setSatiety(newSatiety);
                     if (newSatiety != oldSatiety)
                         food.setWeight(food.getWeight() - (newSatiety - oldSatiety));
-                    System.out.println(getName() + " поел " + "\\uD83E\\uDD57 " + food.getName() );
+                    System.out.println(getName() + " пощипал " + food.getName() );
                     food.die();
                 }
             }

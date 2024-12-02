@@ -57,7 +57,7 @@ public abstract class Animal extends LivingObject {
                 if (couple.getSex().equals(Sex.MALE)) {
                     child = born();
                     i = getCell().getAnimalsInCell().size()+1;
-                    System.out.println("У " + getName() + " рождается " + "\\uD83C\\uDF7C " + child.getName());
+                    System.out.println("У " + getName() + " рождается " + child.getName());
                 }
 
             }
@@ -69,7 +69,7 @@ public abstract class Animal extends LivingObject {
         if (satiety <= 0) {
             Island.animals.remove(Animal.this);
             getCell().getAnimalsInCell().remove(Animal.this);
-            System.out.println(getName() + " умер от голода " + "\\u2620\\uFE0F");
+            System.out.println(getName() + " умер от голода.");
         }
     }
 
@@ -104,7 +104,7 @@ public abstract class Animal extends LivingObject {
             setCell(Island.cellList.get(newIndex) );
             Island.cellList.get(newIndex).getAnimalsInCell().add(Animal.this);
             if (newIndex == indexOfCell )
-                System.out.println(getName() + " не переместился. Конец острова."  );
+                System.out.println(getName() + " не переместился. Конец острова.");
             else System.out.println(getName() + " переместился в ячейку " + getCell() );}
         else System.out.println(getName() + " не переместился. Нет свободного места."  );
         if (newIndex != indexOfCell )

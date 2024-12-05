@@ -22,16 +22,16 @@ public class Settings {
     public static final int COUNT_OF_BEAR = 3;
     public static final int COUNT_OF_EAGLE = 3;
     //ТРАВОЯДНЫЕ
-    public static final int COUNT_OF_HORSE = 3;
-    public static final int COUNT_OF_DEER = 3;
-    public static final int COUNT_OF_RABBIT = 3;
-    public static final int COUNT_OF_MOUSE = 3;
-    public static final int COUNT_OF_GOAT = 3;
-    public static final int COUNT_OF_SHEEP = 3;
-    public static final int COUNT_OF_BOAR = 3;
-    public static final int COUNT_OF_BUFFALO = 3;
-    public static final int COUNT_OF_DUCK = 3;
-    public static final int COUNT_OF_CATERPILLAR = 3;
+    public static final int COUNT_OF_HORSE = 10;
+    public static final int COUNT_OF_DEER = 10;
+    public static final int COUNT_OF_RABBIT = 10;
+    public static final int COUNT_OF_MOUSE = 10;
+    public static final int COUNT_OF_GOAT = 10;
+    public static final int COUNT_OF_SHEEP = 10;
+    public static final int COUNT_OF_BOAR = 10;
+    public static final int COUNT_OF_BUFFALO = 10;
+    public static final int COUNT_OF_DUCK = 10;
+    public static final int COUNT_OF_CATERPILLAR = 20;
     //РАСТЕНИЯ
     public static final int COUNT_OF_PLANT = 10;
 

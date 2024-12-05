@@ -6,7 +6,7 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
 
         Settings settings = new Settings();
-        MoveAnimal moveAnimal = new MoveAnimal(settings);   // животные двигаются
+        MoveAnimal moveAnimal = new MoveAnimal(settings);   // животные перемещаются
         moveAnimal.start();
         PredatorEat predatorEat = new PredatorEat(settings);  // хищники едят
         predatorEat.start();
@@ -23,7 +23,7 @@ public class App {
         growPlant.join();
         reproduce.join();
 
-        settings.getCurrentState();            // итоговая статистика
+        settings.getCurrentState();            // текущий статус
 
     }
 }
